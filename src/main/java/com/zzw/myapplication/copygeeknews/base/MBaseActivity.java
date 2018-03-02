@@ -21,7 +21,7 @@ public abstract class MBaseActivity<T extends MBasePresenter> extends MSimpleAct
 
 	protected MActivityCompnent getActivityCompnent() {
 		return DaggerMActivityCompnent.builder()
-				.mAppCompnent(((MAPP)getApplication()).getMappcompnent())
+				.mAppCompnent(MAPP.getMappcompnent())
 				.mActivityModule(getActivityModule())
 				.build();
 	}

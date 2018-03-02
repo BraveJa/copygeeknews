@@ -97,7 +97,7 @@ public class MAPP extends MultiDexApplication {
 		}
 	}
 
-	public MAppCompnent getMappcompnent() {
+	public static MAppCompnent getMappcompnent() {
 		if (mAppCompnent == null) {
 			mAppCompnent = DaggerMAppCompnent.builder()
 					.mAppModule(new MAppModule(instance))
